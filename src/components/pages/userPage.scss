@@ -1,0 +1,59 @@
+.user-page {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+}
+.repo-list {
+  width: 500px;
+  li {
+    padding: 5px 10px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    span {
+      &:first-child {
+        font-weight: 500;
+      }
+      &:nth-child(2) {
+        font-size: 14px;
+        color: #757575;
+      }
+      &:last-child {
+        font-size: 12px;
+        color: #9e9e9e;
+      }
+    }
+  }
+}
+.user-info {
+  width: 300px;
+  &__wrapper {
+    position: fixed;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-right: 1px solid black;
+  }
+  &__name {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &__loogin {
+    font-size: 18px;
+  }
+  &__descr {
+    margin-top: 15px;
+    font-size: 14px;
+    justify-items: start;
+    display: grid;
+    grid-template-columns: 22px auto;
+    span, a {
+      margin-left: 6px;
+    }
+  }
+}
